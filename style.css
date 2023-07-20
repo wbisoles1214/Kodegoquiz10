@@ -1,0 +1,164 @@
+#headline1 {
+  position: absolute;
+  top: 42rem;
+}
+
+#femaleImage {
+  position: absolute;
+  top: 25rem;
+}
+
+#headline2 {
+  position: absolute;
+  top: 18rem;
+  right: 10rem;
+}
+
+#subheadline {
+  position: absolute;
+  top: 35rem;
+  left: 40rem;
+}
+
+#LearnMorebtn {
+  position: absolute;
+  top: 45rem;
+  left: 50%;
+  width: 40rem;
+  height: 11rem;
+}
+
+#logo {
+  position: absolute;
+  top: 15rem;
+  left: 65rem;
+  width: 40rem;
+}
+
+#replay {
+  position: absolute;
+  top: 55rem;
+  left: 52%;
+  width: 30rem;
+  height: 8rem;
+}
+
+#banner {
+  background-image: url(/images/background.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.popout-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation: fade-in 1s ease forwards;
+}
+
+.headline {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.subheadline {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slide-to-right {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slide-to-left {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-to-top-right {
+  from {
+    left: 50%;
+    top: 50%;
+  }
+  to {
+    left: 54%;
+    top: 10rem;
+
+    img {
+      width: 1rem;
+    }
+  }
+}
+
+@keyframes slide-to-left2 {
+  from {
+    left: 100%;
+  }
+  to {
+    right: 50%;
+  }
+}
